@@ -7,8 +7,8 @@ A Gulp/Babel boilerplate for Squarespace.  This build tool will:
 
 ## Editable files
 * **src**
-  * less - Put all your .less files in here!
-  * js - Put all your ES6 / JS files in here!
+  * **less** - Put all your .less files in here!
+  * **js** - Put all your ES6 / JS files in here!
 
 * **gulp-sftp-auth.js** - Your SFTP credentials go here, in strings. Add this file to .gitignore
 
