@@ -4,10 +4,10 @@ class Square {
   }
 
   render() {
-    console.log('okay?!?');
+    console.log('space!!!');
   }
 }
 
-let z = new Square();
+let sqsp = new Square();
 
-z.render();
+sqsp.render();
