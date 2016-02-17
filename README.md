@@ -5,12 +5,12 @@ A Gulp/Babel boilerplate for Squarespace.  The build tool will:
 * Auto-prefix your CSS with browser vendor prefixes
 * Upload all changed files via SFTP to your dev site
 
-## File structure
+## Editable files
 * **src** 
   * less - Put all your .less files in here!
   * js - Put all your ES6 / JS files in here!
 
-* gulp-sftp-auth.js - Your SFTP credentials go here, in strings
+* **gulp-sftp-auth.js** - Your SFTP credentials go here, in strings. Add this file to .gitignore
 
 ## Step 1: Clone your template repository
 Create a new site on Squarespace, flip on Developer Mode, and clone the repository
