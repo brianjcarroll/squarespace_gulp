@@ -16,7 +16,7 @@ A Gulp/Babel boilerplate for Squarespace.  The build tool will:
 Create a new site on Squarespace, flip on Developer Mode, and clone the repository
 
 ## Step 2: Clone this repository
-Make sure you have node and npm installed.
+Make sure you have [node](https://nodejs.org/en/) and [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm) installed.
 
 Then, from within your template directory:
 
@@ -29,7 +29,7 @@ The username and password is what you used to sign up for Squarespace
 The remote path is the identifier of your site. If your URL is http://bcarroll.squarespace.com then the identifier is **/bcarroll/**. Include the slashes.
 
 ## Step 4: Open up the Command Line
-Make sure you have gulp installed globally.
+Make sure you have [gulp](https://www.npmjs.com/package/gulp) installed globally.
 
 `gulp` -- This will watch all files, and transpile / preprocess, and upload via SFTP as necessary
 
