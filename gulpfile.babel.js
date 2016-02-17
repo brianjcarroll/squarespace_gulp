@@ -28,7 +28,7 @@ function handleSFTP(file) {
   let f = file.constructor !== Array ? file.path : file;
   return gulp
     .src(f)
-    .pipe(changed('./*'))
+    .pipe(changed('../*'))
     .pipe(sftp({
       host: auth.host,
       user: auth.user,
@@ -59,7 +59,7 @@ gulp.task('scripts', () => {
         presets: ['es2015']
     }))
     .pipe(rename('main.js'))
-    .pipe(gulp.dest('scripts'));
+    .pipe(gulp.dest('../scripts'));
 });
 
 // Preprocess and autoprefix LESS in src/less
@@ -71,7 +71,7 @@ gulp.task('less', () => {
       plugins: [autoprefix],
     }))
     .pipe(rename('main.css'))
-    .pipe(gulp.dest('styles'));
+    .pipe(gulp.dest('../styles'));
 })
 
 // Watch for changes to src/* files and upload them via SFTP
@@ -80,7 +80,7 @@ gulp.task('watch', () => {
   gulp.watch('src/js/*.js', [ 'scripts' ]);
   gulp.watch('src/less/*.less', [ 'less' ]);
 
-  gulp.watch(['*.region', 'blocks/*', 'template.conf', 'styles/*.css','scripts/*.js', 'collections/*', 'assets/*', 'pages/*'])
+  gulp.watch(['../*.region', '../blocks/*', '../template.conf', '../styles/*.css','../scripts/*.js', '../collections/*', '../assets/*', '../pages/*'])
   .on('change', (file) => {
     handleSFTP(file);
   });
@@ -88,7 +88,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('upload', () => {
-  let files = ['*.region', 'blocks/*', 'template.conf', 'styles/*.css','scripts/*.js', 'collections/*', 'assets/*', 'pages/*'];
+  let files = ['../*.region', '../blocks/*', '../template.conf', '../styles/*.css','../scripts/*.js', '../collections/*', '../assets/*', '../pages/*'];
   handleSFTP(files)
 });
 
