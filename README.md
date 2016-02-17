@@ -1,5 +1,5 @@
 # squarespace_gulp
-A Gulp/Babel boilerplate for Squarespace.  The build tool will:
+A Gulp/Babel boilerplate for Squarespace.  This build tool will:
 * Transpile and concatenate ES6 into browser compatible ES5
 * Preprocess and concatenate **Modern versions of LESS** *see notes*
 * Auto-prefix your CSS with browser vendor prefixes
@@ -37,6 +37,7 @@ Make sure you have [gulp](https://www.npmjs.com/package/gulp) installed globally
 
 ## Notes:
 This is important. In order for all of this to work, you must do a few things.
+
 First, open up **template.conf** and add 'main.css' to the stylesheets array. This file, main.css, is the preprocessed, concatenated CSS file generated from all the .less files in your src/less folder.
 
 Second, open up site.region (or wherever you include your script tags), and add this to the bottom:
