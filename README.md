@@ -6,7 +6,7 @@ A Gulp/Babel boilerplate for Squarespace.  The build tool will:
 * Upload all changed files via SFTP to your dev site
 
 ## Editable files
-* **src** 
+* **src**
   * less - Put all your .less files in here!
   * js - Put all your ES6 / JS files in here!
 
@@ -44,5 +44,7 @@ Second, open up site.region (or wherever you include your script tags), and add 
 ```<squarespace:script src="main.js" combo="false"></script>```
 
 Don't touch anything in your styles or scripts folder from here on out - they are automatically built by gulp!
+
+Squarespace uses a custom LESS compiler, which does not have all the same versions of the current versions of LESS. This build tool allows you to use custom LESS instead.
 
 Good luck :-)
